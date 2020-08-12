@@ -1,0 +1,19 @@
+.footer {
+  background-color: $color-text-dark;
+  padding: 13px 0;
+  @extend %flex-center;
+}
+
+.github {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: $color-text-light;
+
+  img {
+    width: 18px;
+    height: 17px;
+    filter: invert(1);
+    margin-right: 7px;
+  }
+}

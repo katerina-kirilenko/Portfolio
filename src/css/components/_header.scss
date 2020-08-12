@@ -1,0 +1,47 @@
+.header {
+  background-color: rgba($color-text-dark, 0.9);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 83px;
+  height: 26px;
+}
+
+.logo-svg {
+  display: inline-block;
+  background-image: url("../img/logo.svg");
+  width: 83px;
+  height: 26px;
+}
+
+.navigation {
+  display: flex;
+  margin: 0;
+}
+
+.navigation__link {
+  padding: 0 22px;
+  list-style: none;
+
+  a {
+    color: $color-text-light;
+    text-decoration: none;
+    @include font(1.6rem, 2.1rem, normal, normal);
+    @extend %transition;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }  
+}

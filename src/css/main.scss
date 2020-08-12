@@ -1,7 +1,11 @@
-body {
-  text-align: center;
-}
+@import "./constants";
+@import "./placeholders";
+@import "./mixins";
 
-.hello {
-  font-size: 2rem;
-}
+@import "./base";
+@import "./components/header";
+@import "./components/banner";
+@import "./components/about";
+@import "./components/portfolio";
+@import "./components/contacts";
+@import "./components/footer";

@@ -1,0 +1,150 @@
+.portfolio {
+  background-color: rgba(0, 0, 0, 0.02);
+  padding: 57px 0;
+}
+
+.portfolio__wrapper {
+  @extend %flex-center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.portfolio__tags {
+  margin-bottom: 34px;
+}
+
+.examples {
+  flex-wrap: wrap;
+}
+
+.example {
+  padding: 30px 20px;
+  width: 30%;
+  @extend %transition;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+
+  &:hover {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+  }
+
+  img {
+    max-width: 300px;
+    @extend %transition;
+  }
+  &:hover .portfolio__overlay {
+    opacity: 1;
+  }
+  &:hover .example__icons {
+    display: flex;
+  }
+}
+
+.example__content {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.example__title {
+  margin-bottom: 20px;
+}
+
+.portfolio__overlay {
+  position: absolute;
+  top: 43px;
+  @extend %flex-center;
+  @extend %transition;
+  opacity: 0;
+  background-color: rgba(0,0,0, 0.6);
+  width: 277px;
+  height: 167px;
+}
+
+.example__icons {
+  @extend %flex-center;
+  display: none;
+  top: 50%;
+
+  .icon {
+    @extend %flex-center;
+    @extend %transition;
+    margin: 0 5px;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 100%;
+    &:hover {
+      background-color: $color-text-light;
+    }
+  }
+}
+
+.icon_more {
+  cursor: pointer;
+  background: url("../img/fullscreen.svg") center no-repeat;
+}
+.icon_link {
+  background: url("../img/link.svg") center no-repeat;
+}
+
+/* The Modal (background) */
+.example__modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 9999; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+}
+/* Modal Content/Box */
+.example__description {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px 23px 25px;
+  border-radius: 10px;
+  width: 62%; /* Could be more or less, depending on screen size */
+}
+/* The Close Button */
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 32px;
+  font-weight: bold;
+  @extend %transition;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.modal__title {
+  margin-top: 12px;
+  @include font(1.8rem, 2.4rem, normal, 600);
+}
+.modal__text {  
+  margin: 5px 0 20px;
+  padding: 10px 20px;
+
+  span {
+   display: inline-block; 
+  }
+}
+.text_cursive {
+  color: #717171;
+  @include font(1.4rem, 2.4rem, italic, normal);
+  margin-top: 7px;
+}

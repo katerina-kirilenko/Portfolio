@@ -1,0 +1,113 @@
+.about {
+  margin-top: -56px;
+  padding: 57px 0 87px;
+}
+
+.about__bg {
+  @extend %flex-center;
+}
+
+.about__img {
+  max-width: 440px;
+}
+
+.about__content {
+  max-width: 60%;
+  .text {
+    margin: 0 0 32px;
+    text-align: justify;
+
+    span {
+      display: inline-block;
+      margin-bottom: 9px;
+    }
+  }
+}
+
+.about__skills {
+  margin-bottom: 70px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.skill__title {
+  margin-bottom: 7px;
+}
+
+.wrapper__line-success {
+  overflow: hidden;
+}
+
+.skill__level {
+  position: relative;
+  margin-bottom: 10px;
+
+  .line-success,
+  .line-all {
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 8px;
+    border-radius: 10px;
+  }
+  .line-success {
+    background-color: $color-additional;
+    z-index: 22;
+    animation-duration: 2s;
+    animation-delay: 2s;
+  }
+  .line-all {
+    background-color: #e9e9e9;
+    width: 100%;
+    z-index: 21;
+  }
+}
+
+.skill {
+  margin-bottom: 26px;
+
+  &:nth-child(1) {
+    .line-success {
+      width: 85%;
+    }
+  }
+  &:nth-child(2) {
+    .line-success {
+      width: 80%;
+    }
+  }
+  &:nth-child(3) {
+    .line-success {
+      width: 70%;
+    }
+  }
+  &:nth-child(4) {
+    .line-success {
+      width: 95%;
+    }
+  }
+  &:nth-child(5) {
+    .line-success {
+      width: 70%;
+    }
+  }
+}
+
+@keyframes doing-line {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.button_cv {
+  background-color: #ffffff;
+  border-color: $color-additional;
+  color: $color-additional;
+
+  &:hover {
+    background-color: $color-additional;
+  }
+}

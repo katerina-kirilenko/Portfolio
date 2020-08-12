@@ -1,12 +1,567 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-    <h1 class="hello">Hello World! :)</h1>
-</body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="wrapper header__wrapper">
+        <a href="#" class="logo"><span class="logo-svg"></span></a>
+        <nav class="header__navigation">
+          <ul class="navigation">
+            <li class="navigation__link"><a href="#about">Обо мне</a></li>
+            <li class="navigation__link"><a href="#portfolio">Портфолио</a></li>
+            <li class="navigation__link"><a href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Banner -->
+    <section class="banner">
+      <div class="wrapper banner__wrapper">
+        <div class="banner__content">
+          <p class="text">Привет, меня зовут</p>
+          <h1 class="heading">Екатерина Кириленко</h1>
+          <div class="wrapper__line-after-text">
+            <span class="line-after-text"></span>
+            <p class="text">Frontend Developer</p>
+            <span class="line-before-text"></span>
+          </div>
+          <a class="button button_colored" href="#about">Узнать больше</a>
+        </div>
+      </div>
+    </section>
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="wrapper about__wrapper">
+        <div class="layout-2-columns">
+          <div class="about__bg">
+            <img class="about__img" src="./img/about_bg.svg" alt="about" />
+          </div>
+          <div class="about__content">
+            <div class="wrapper__line-after-text">
+              <span class="line-after-text"></span>
+              <h2>Обо мне</h2>
+              <span class="line-before-text"></span>
+            </div>
+            <p class="text">
+              <span>
+                Меня зовут Екатерина Кириленко. Я начинающий
+                Frontend-разработчик.
+              </span>
+              <span>
+                Вы когда-нибудь задумывались почему ваш любимый сайт выглядит
+                именно так, почему кнопки работают, когда вы их нажимаете,
+                слайды непрерывно сменяют друг друга, а текст появляется плавно?
+                Всё это создаётся разработчиками фронтенда.
+              </span>
+              <span>
+                Frontend привлекает меня сильнее чем другие технологии. Это
+                невероятно круто, когда ты видишь свой продукт, можешь им
+                воспользоваться. Я всегда стремлюсь сделать свою работу
+                наилучшим образом. Моё кредо – «Нет Ничего Невозможного». PS: на
+                невозможное просто нужно больше времени.
+              </span>
+            </p>
+            <div class="about__skills">
+              <div class="skill">
+                <div class="skill__title layout-2-columns">
+                  <span>HTML5</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill__level">
+                  <span class="line-success"></span>
+                  <span class="line-all"></span>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill__title layout-2-columns">
+                  <span>CSS3</span>
+                  <span>80%</span>
+                </div>
+                <div class="skill__level">
+                  <span class="line-success"></span>
+                  <span class="line-all"></span>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill__title layout-2-columns">
+                  <span>JavaScript</span>
+                  <span>70%</span>
+                </div>
+                <div class="skill__level">
+                  <span class="line-success"></span>
+                  <span class="line-all"></span>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill__title layout-2-columns">
+                  <span>Photoshop/Figma</span>
+                  <span>95%</span>
+                </div>
+                <div class="skill__level">
+                  <span class="line-success"></span>
+                  <span class="line-all"></span>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill__title layout-2-columns">
+                  <span>Git</span>
+                  <span>70%</span>
+                </div>
+                <div class="skill__level">
+                  <span class="line-success"></span>
+                  <span class="line-all"></span>
+                </div>
+              </div>
+            </div>
+            <div class="about__buttons">
+              <a class="button button_colored" href="#portfolio"
+                >Посмотреть работы</a
+              >
+              <a
+                class="button button_bordered button_cv"
+                href="https://drive.google.com/file/d/1u2jYRZC5Vpb7-3B8dNsCDy-0yyXxQhJq/view?usp=sharing"
+                target="_blank"
+                >Скачать резюме</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio -->
+    <section class="portfolio" id="portfolio">
+      <div class="wrapper portfolio__wrapper">
+        <div class="wrapper__line-after-text">
+          <span class="line-after-text"></span>
+          <h2>Портфолио</h2>
+          <span class="line-before-text"></span>
+        </div>
+        <div class="tags portfolio__tags">
+          <span class="tag tag_selected">Все</span>
+          <span class="tag tag_bordered">Сайты</span>
+          <span class="tag tag_bordered">Приложения</span>
+        </div>
+        <div class="layout-3-columns examples">
+          <div class="example" data-category="Сайты">
+            <img src="./img/portfolio/dsk.png" alt="dsk" />
+            <div class="portfolio__overlay">
+              <div class="example__icons">
+                <div class="icon icon_more"></div>
+                <a
+                  class="icon icon_link"
+                  href="http://vitdsk.by//"
+                  target="_blank"
+                ></a>
+              </div>
+            </div>
+            <div class="example__content">
+              <h4 class="example__title">
+                Сайт государственного предприятия «Витебский ДСК»
+              </h4>
+              <span class="tag tag_colored">Сайт</span>
+            </div>
+            <div class="example__modal">
+              <div class="example__description">
+                <span class="close-btn">&times;</span>
+                <img src="./img/portfolio/dsk.png" alt="dsk" />
+                <h4 class="modal__title">
+                  Сайт государственного предприятия «Витебский ДСК»
+                </h4>
+                <p class="modal__text">
+                  <span
+                    >Согласно ТЗ был разработан дизайн сайта и создан шаблон для
+                    Wordpress.</span
+                  >
+                  <span
+                    >Шаблон был внедрен в январе 2020 года и используется
+                    компанией<br />
+                    по настоящее время.</span
+                  >
+                </p>
+                <span class="tag tag_colored">Wordpress</span>
+                <span class="tag tag_colored">HTML5/CSS3</span>
+                <span class="tag tag_colored">PHP</span>
+              </div>
+            </div>
+          </div>
+          <div class="example" data-category="Приложения">
+            <img src="./img/portfolio/RS-lang.png" alt="RS-lang" />
+            <div class="portfolio__overlay">
+              <div class="example__icons">
+                <div class="icon icon_more"></div>
+                <a
+                  class="icon icon_link"
+                  href="https://rslang-team53-tastypurgen.netlify.app/"
+                  target="_blank"
+                ></a>
+              </div>
+            </div>
+            <div class="example__content">
+              <h4 class="example__title">
+                RS lang – приложение для изучения английских слов с помощью игр
+              </h4>
+              <span class="tag tag_colored">Приложение</span>
+            </div>
+            <div class="example__modal">
+              <div class="example__description">
+                <span class="close-btn">&times;</span>
+                <img src="./img/portfolio/RS-lang.png" alt="RS-lang" />
+                <h4 class="modal__title">RS lang</h4>
+                <p class="modal__text">
+                  <span
+                    >RS lang – приложение для изучения английских слов по
+                    методике интервального повторения и с мини-играми.
+                  </span>
+                  <span class="text_cursive"
+                    >Пример командной работы, где я разработала дизайн основного
+                    приложения и мини-игру «Мозаика». <br />Приложение является
+                    итоговым проектом в онлайн-школе RS School.</span
+                  >
+                </p>
+                <span class="tag tag_colored">HTML5/CSS3/SASS</span>
+                <span class="tag tag_colored">JavaScript</span>
+                <span class="tag tag_colored">API</span>
+                <span class="tag tag_colored">React</span>
+                <span class="tag tag_colored">Командная работа</span>
+              </div>
+            </div>
+          </div>
+          <div class="example" data-category="Сайты">
+            <img src="./img/portfolio/singolo.png" alt="singolo" />
+            <div class="portfolio__overlay">
+              <div class="example__icons">
+                <div class="icon icon_more"></div>
+                <a
+                  class="icon icon_link"
+                  href="https://katerina-kirilenko.github.io/singolo/"
+                  target="_blank"
+                ></a>
+              </div>
+            </div>
+            <div class="example__content">
+              <h4 class="example__title">Singolo – адаптивный шаблон сайта</h4>
+              <span class="tag tag_colored">Сайт</span>
+            </div>
+            <div class="example__modal">
+              <div class="example__description">
+                <span class="close-btn">&times;</span>
+                <img src="./img/portfolio/singolo.png" alt="singolo" />
+                <h4 class="modal__title">Singolo</h4>
+                <p class="modal__text">
+                  <span
+                    >Singolo – это адаптивный шаблон сайта с интересным
+                    слайдером.</span
+                  >
+                  <span class="text_cursive"
+                    >Шаблон является проектом в онлайн-школе RS School. При
+                    разработке был отработан навык верстки пиксель-перфект, а
+                    также изучена работа с DOM-элементами.</span
+                  >
+                </p>
+                <span class="tag tag_colored">HTML5/CSS3</span>
+                <span class="tag tag_colored">JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <div class="example" data-category="Приложения">
+            <img src="./img/portfolio/move-search.png" alt="move-search" />
+            <div class="portfolio__overlay">
+              <div class="example__icons">
+                <div class="icon icon_more"></div>
+                <a
+                  class="icon icon_link"
+                  href="https://katerina-kirilenko-movie-search.netlify.app/"
+                  target="_blank"
+                ></a>
+              </div>
+            </div>
+            <div class="example__content">
+              <h4 class="example__title">
+                Movie Search – приложение для поиска фильмов
+              </h4>
+              <span class="tag tag_colored">Приложение</span>
+            </div>
+            <div class="example__modal">
+              <div class="example__description">
+                <span class="close-btn">&times;</span>
+                <img src="./img/portfolio/move-search.png" alt="move-search" />
+                <h4 class="modal__title">Movie Search</h4>
+                <p class="modal__text">
+                  <span
+                    >Movie Search – одностраничное приложение для поиска
+                    подробной информации о фильмах по запросу
+                    пользователя.</span
+                  >
+                  <span class="text_cursive"
+                    >Приложение является проектом в онлайн-школе RS School. В
+                    процессе разработки была изучена работа со сторонними API и
+                    библиотеками.</span
+                  >
+                </p>
+                <span class="tag tag_colored">HTML5/CSS3</span>
+                <span class="tag tag_colored">JavaScript</span>
+                <span class="tag tag_colored">API</span>
+                <span class="tag tag_colored">Webpack</span>
+                <span class="tag tag_colored">Owl Carousel</span>
+              </div>
+            </div>
+          </div>
+          <div class="example" data-category="Сайты">
+            <img src="./img/portfolio/waxom.png" alt="waxom" />
+            <div class="portfolio__overlay">
+              <div class="example__icons">
+                <div class="icon icon_more"></div>
+                <a
+                  class="icon icon_link"
+                  href="https://katerina-kirilenko.github.io/Waxom/"
+                  target="_blank"
+                ></a>
+              </div>
+            </div>
+            <div class="example__content">
+              <h4 class="example__title">Waxom – адаптивный шаблон сайта</h4>
+              <span class="tag tag_colored">Сайт</span>
+            </div>
+            <div class="example__modal">
+              <div class="example__description">
+                <span class="close-btn">&times;</span>
+                <img src="./img/portfolio/waxom.png" alt="Waxom" />
+                <h4 class="modal__title">Waxom</h4>
+                <p class="modal__text">
+                  <span>Waxom – это адаптивный шаблон сайта.</span>
+                  <span class="text_cursive"
+                    >Шаблон является проектом при обучении в GeekBrains, в
+                    котором отрабатывались навыки верстки на HTML5/CSS3.</span
+                  >
+                </p>
+                <span class="tag tag_colored">HTML5/CSS3</span>
+              </div>
+            </div>
+          </div>
+          <div class="example" data-category="Приложения">
+            <img src="./img/portfolio/fancy-weather.png" alt="fancy-weather" />
+            <div class="portfolio__overlay">
+              <div class="example__icons">
+                <div class="icon icon_more"></div>
+                <a
+                  class="icon icon_link"
+                  href="https://fancy-weather-kirilenko.netlify.app/"
+                  target="_blank"
+                ></a>
+              </div>
+            </div>
+            <div class="example__content">
+              <h4 class="example__title">Fancy Weather – прогноз погоды</h4>
+              <span class="tag tag_colored">Приложение</span>
+            </div>
+            <div class="example__modal">
+              <div class="example__description">
+                <span class="close-btn">&times;</span>
+                <img
+                  src="./img/portfolio/fancy-weather.png"
+                  alt="fancy-weather"
+                />
+                <h4 class="modal__title">Fancy Weather</h4>
+                <p class="modal__text">
+                  <span
+                    >Fancy Weather – это простое приложение, отображающее
+                    прогноз погоды на текущий день, а также на ближайших 3
+                    дня.</span
+                  >
+                  <span class="text_cursive"
+                    >Приложение является проектом в онлайн-школе RS School. В
+                    процессе разработки была изучена работа со сторонними API,
+                    картами, геолокацией.</span
+                  >
+                </p>
+                <span class="tag tag_colored">HTML5/CSS3</span>
+                <span class="tag tag_colored">JavaScript</span>
+                <span class="tag tag_colored">API</span>
+                <span class="tag tag_colored">Яндекс.Карты</span>
+              </div>
+            </div>
+          </div>
+          <div class="example" data-category="Сайты">
+            <img src="./img/portfolio/flat.png" alt="flat" />
+            <div class="portfolio__overlay">
+              <div class="example__icons">
+                <div class="icon icon_more"></div>
+                <a
+                  class="icon icon_link"
+                  href="https://katerina-kirilenko.github.io/flat-website-template/"
+                  target="_blank"
+                ></a>
+              </div>
+            </div>
+            <div class="example__content">
+              <h4 class="example__title">Flat – простой шаблон сайта</h4>
+              <span class="tag tag_colored">Сайт</span>
+            </div>
+            <div class="example__modal">
+              <div class="example__description">
+                <span class="close-btn">&times;</span>
+                <img src="./img/portfolio/flat.png" alt="flat" />
+                <h4 class="modal__title">Flat</h4>
+                <p class="modal__text">
+                  <span>Flat – простой шаблон сайта.</span>
+                  <span class="text_cursive"
+                    >Шаблон является проектом при обучении в GeekBrains, в
+                    котором отрабатывались навыки верстки на HTML5/CSS3.</span
+                  >
+                </p>
+                <span class="tag tag_colored">HTML5/CSS3</span>
+              </div>
+            </div>
+          </div>
+          <div class="example" data-category="Приложения">
+            <img
+              src="./img/portfolio/english-for-kids.png"
+              alt="english-for-kids"
+            />
+            <div class="portfolio__overlay">
+              <div class="example__icons">
+                <div class="icon icon_more"></div>
+                <a
+                  class="icon icon_link"
+                  href="https://katerina-kirilenko-english-for-kids.netlify.app/"
+                  target="_blank"
+                ></a>
+              </div>
+            </div>
+            <div class="example__content">
+              <h4 class="example__title">
+                English for kids – приложение для изучения английских слов
+                детьми
+              </h4>
+              <span class="tag tag_colored">Приложение</span>
+            </div>
+            <div class="example__modal">
+              <div class="example__description">
+                <span class="close-btn">&times;</span>
+                <img
+                  src="./img/portfolio/english-for-kids.png"
+                  alt="english-for-kids"
+                />
+                <h4 class="modal__title">English for kids</h4>
+                <p class="modal__text">
+                  <span
+                    >English for kids – приложение для изучения английских слов
+                    детьми.</span
+                  >
+                  <span class="text_cursive"
+                    >Приложение является проектом в онлайн-школе RS
+                    School.</span
+                  >
+                </p>
+                <span class="tag tag_colored">HTML5/CSS3</span>
+                <span class="tag tag_colored">JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <div class="example" data-category="Сайты">
+            <img src="./img/portfolio/freelanser.png" alt="freelanser" />
+            <div class="portfolio__overlay">
+              <div class="example__icons">
+                <div class="icon icon_more"></div>
+                <a
+                  class="icon icon_link"
+                  href="https://katerina-kirilenko.github.io/Freelanser/"
+                  target="_blank"
+                ></a>
+              </div>
+            </div>
+            <div class="example__content">
+              <h4 class="example__title">
+                Freelanser – шаблон сайта для креативного агентства
+              </h4>
+              <span class="tag tag_colored">Сайт</span>
+            </div>
+            <div class="example__modal">
+              <div class="example__description">
+                <span class="close-btn">&times;</span>
+                <img src="./img/portfolio/freelanser.png" alt="freelanser" />
+                <h4 class="modal__title">Freelanser</h4>
+                <p class="modal__text">
+                  <span
+                    >Freelanser – это простой адаптивный шаблон сайта для
+                    креативного агентства.</span
+                  >
+                  <span class="text_cursive">Шаблон был реализован с целью отработки навыков HTML5/CSS3.</span>
+                </p>
+                <span class="tag tag_colored">HTML5/CSS3</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contacts -->
+    <section class="contacts" id="contacts">
+      <div class="contacts__content">
+        <div class="wrapper__line-after-text">
+          <span class="line-after-text"></span>
+          <h2>Контакты</h2>
+          <span class="line-before-text"></span>
+        </div>
+        <h3 class="contacts__description">
+          Если у вас есть проект или вы просто хотите пообщаться,<br />
+          я всегда буду рада поговорить.
+        </h3>
+        <a class="contact_mail" href="mailto:katerina.sanway@gmail.com">
+          <span>katerina.sanway@gmail.com</span>
+        </a>
+        <a class="contact_phone" href="tel:+375298132438">
+          <span>+375 (29) 813-24-38 (МТС)</span>
+        </a>
+        <span>Беларусь, г. Витебск</span>
+        <div class="contacts__icons">
+          <a
+            class="contacts__icon"
+            href="https://www.linkedin.com/in/ekirylenka/"
+            target="_blank"
+          >
+            <span class="icon icon_linkedin"></span>
+          </a>
+          <a
+            class="contacts__icon"
+            href="https://t.me/kirilenkokaterina"
+            target="_blank"
+          >
+            <span class="icon icon_telegram"></span>
+          </a>
+          <a
+            class="contacts__icon"
+            href="https://join.skype.com/invite/m5DhAtJzAXIz"
+            target="_blank"
+          >
+            <span class="icon icon_skype"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <a
+        class="github"
+        href="https://github.com/katerina-kirilenko"
+        target="_blank"
+      >
+        <img src="./img/github.svg" alt="github" />
+        <span>GitHub</span>
+      </a>
+    </footer>
+    <a class="back_to_top" id="btnTop" title="Наверх">↑</a>
+  </body>
 </html>

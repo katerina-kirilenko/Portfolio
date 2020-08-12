@@ -1,0 +1,35 @@
+.banner {
+  background: url("../img/myface.png") bottom right / 700px no-repeat,
+    url("../img/fon_zigzag.svg") left -25px no-repeat,
+    linear-gradient(
+      to right,
+      rgba($color-text-dark, 1),
+      rgba($color-text-dark, 0.9)
+    );
+  height: 100vh;
+  overflow: hidden;
+  @extend %flex-center;
+  position: relative;
+  top: -56px;    
+  z-index: 1;
+}
+
+.banner__wrapper {
+  display: flex;
+  width: 100%;
+  top: -56px;
+}
+
+.banner__content {
+  color: $color-text-light;
+  letter-spacing: 0.01em;
+
+  .text {
+    @include font(2.4rem, 2.8rem, normal, normal);
+    margin: 10px 0;
+  }
+
+  .heading {
+    margin: 0 0 12px -4px;
+  }
+}
