@@ -111,3 +111,23 @@
     background-color: $color-additional;
   }
 }
+
+@media screen and (max-width: $content-mobile) {
+  .about__img,
+  .about__content {
+    max-width: 100%;
+  }
+  .wrapper__line-after-text {
+    justify-content: center;
+  }
+  .about__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .button_colored {
+      margin-bottom: 10px;
+    }
+  }
+}

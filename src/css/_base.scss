@@ -54,12 +54,25 @@ h5 {
   margin-right: auto;
 }
 
+@media screen and (max-width: $content-mobile) {
+  .wrapper {
+    width: 90%;
+  }
+}
+
 .layout-2-columns {
   @include columns(48%);
 }
 
 .layout-3-columns {
   @include columns(30%);
+}
+
+@media screen and (max-width: $content-mobile) {
+  .layout-2-columns,
+  .layout-3-columns {
+    flex-wrap: wrap;
+  }
 }
 
 .button {
